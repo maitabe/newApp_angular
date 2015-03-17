@@ -1,0 +1,22 @@
+<body ng-controller="view1Ctrl">
+
+<form ng-submit="processForm()">
+     <!--use ng-model to bind a specific input into a variable-->
+    <label>First name: <br />
+        <input type="text" name="first name" placeholder="First Name" ng-model="formData.firstName" /></label> <br />
+    <label>Last name:<br />
+        <input type="text" name="last name" placeholder="Last Name" ng-model="formData.lastName" /></label> <br />
+    <label>Address: <br />
+        <input type="text" name="address" placeholder="Address" ng-model="formData.address" /></label> <br />
+    <label>Phone: <br />
+        <input type="text" name="phone" placeholder="Phone" ng-model="formData.phone" /></label> <br />
+    <button  >Submit</button>
+</form>
+
+
+<!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
+<pre>
+    {{ formData }}
+</pre>
+
+</body>
